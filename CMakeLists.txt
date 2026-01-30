@@ -160,7 +160,8 @@ if (NOT BUILD_SHARED_LIBS OR PUGIXML_BUILD_SHARED_AND_STATIC_LIBS)
       ${msvc-rt-mtd-shared}
       ${msvc-rt-mtd-static}
       ${msvc-rt-mt-shared}
-      ${msvc-rt-mt-static})
+      ${msvc-rt-mt-static}
+      -fno-pic -fno-pie)
 endif()
 
 if (BUILD_SHARED_LIBS)
